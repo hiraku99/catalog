@@ -15,5 +15,10 @@
   .field
     = f.label :price
     = f.number_field :price
+  .field
+    Image
+    = Image_tag(@product.image_url) if @product.image?
+    = f.file_field : image
+    = f.hidden_field : image_cashe
   .actions
     = f.submit 'Save'
