@@ -42,7 +42,9 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 group :test do
-  gem 'rspec-rails', group: :development
+  gem 'rspec-rails', "~> 2.12.0", group: :development
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
 end
+
+gem 'haml-rails'
