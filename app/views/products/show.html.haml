@@ -7,6 +7,10 @@
   %b Description:
   = @product.description
 
-= link_to 'Edit', edit_product_path(@product)
+%p
+  %b price:
+  = @product.price
+
+  = link_to 'Edit', edit_product_path(@product)
 \|
 = link_to 'Back', products_path
