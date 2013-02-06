@@ -17,8 +17,8 @@
     = f.number_field :price
   .field
     Image
-    = Image_tag(@product.image_url) if @product.image?
-    = f.file_field : image
-    = f.hidden_field : image_cashe
+    = image_tag(@product.image_url) if @product.image?
+    = f.file_field :image
+    = f.hidden_field :image_cache
   .actions
     = f.submit 'Save'
